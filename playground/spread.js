@@ -22,8 +22,8 @@
 //
 // greet(...personTwo);
 
-var names = ['Mike', 'Ben'];
-var final = ['Kristof', ...names];
-final.forEach(function(element) {
-  console.log('Hi ' + element + '\n');
-});
+// var names = ['Mike', 'Ben'];
+// var final = ['Kristof', ...names];
+// final.forEach(function(element) {
+//   console.log('Hi ' + element + '\n');
+// });
