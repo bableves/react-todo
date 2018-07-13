@@ -5,14 +5,14 @@ var AddTodo = React.createClass({
     e.preventDefault();
     var todoText = this.refs.todoText.value;
 
-    if( todoText.length > 0) {
+    if (todoText.length > 0) {
       this.refs.todoText.value = '';
       this.props.onAddTodo(todoText);
     } else {
-      this.refs.todoText.focus();  // if input sucks, cursor goes back to input field
+      this.refs.todoText.focus();
     }
   },
-  render: function() {
+  render: function () {
     return (
       <div>
         <form onSubmit={this.handleSubmit}>

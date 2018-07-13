@@ -1,6 +1,6 @@
 var React = require('react');
 
-var Todo = React.createClass ({
+var Todo = React.createClass({
   render: function () {
     var {id, text, completed} = this.props;
 
@@ -11,7 +11,7 @@ var Todo = React.createClass ({
         <input type="checkbox" checked={completed}/>
         {text}
       </div>
-    );
+    )
   }
 });
 

@@ -7,7 +7,7 @@ var TodoSearch = React.createClass({
 
     this.props.onSearch(showCompleted, searchText);
   },
-  render: function() {
+  render: function () {
     return (
       <div>
         <div>
@@ -20,7 +20,7 @@ var TodoSearch = React.createClass({
           </label>
         </div>
       </div>
-    );
+    )
   }
 });
 
