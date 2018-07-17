@@ -1,12 +1,12 @@
 import firebase from 'firebase';
 
 var config = {
-  apiKey: "AIzaSyApLc7PnuBH4pE8KUZFlJlt6lKpp_rHtgA",
-  authDomain: "kristof-kelemen-todo-app.firebaseapp.com",
-  databaseURL: "https://kristof-kelemen-todo-app.firebaseio.com",
-  projectId: "kristof-kelemen-todo-app",
-  storageBucket: "kristof-kelemen-todo-app.appspot.com",
-  messagingSenderId: "624093161717"
+  apiKey: "AIzaSyDaGGwzcpROAdl0gG-pxOtBDSTrhH6r330",
+  authDomain: "todo-app-4da4f.firebaseapp.com",
+  databaseURL: "https://todo-app-4da4f.firebaseio.com",
+  projectId: "todo-app-4da4f",
+  storageBucket: "todo-app-4da4f.appspot.com",
+  messagingSenderId: "13456764082"
 };
 firebase.initializeApp(config);
 

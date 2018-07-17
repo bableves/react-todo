@@ -2,17 +2,20 @@ import firebase from 'firebase';
 
 try {
   var config = {
-    apiKey: "AIzaSyApLc7PnuBH4pE8KUZFlJlt6lKpp_rHtgA",
-    authDomain: "kristof-kelemen-todo-app.firebaseapp.com",
-    databaseURL: "https://kristof-kelemen-todo-app.firebaseio.com",
-    projectId: "kristof-kelemen-todo-app",
-    storageBucket: "kristof-kelemen-todo-app.appspot.com",
-    messagingSenderId: "624093161717"
+    apiKey: process.env.API_KEY,
+    authDomain: process.env.AUTH_DOMAIN,
+    databaseURL: process.env.DATABASE_URL,
+    projectId: process.env.PROJECT_ID,
+    storageBucket: process.env.STORAGE_BUCKET,
+    messagingSenderId: process.env.MESSAGING_SENDER_ID
   };
   firebase.initializeApp(config);
 } catch (e) {
-  
-}
+
+};
+
+console.log("NODE_ENV",process.env.NODE_ENV);
+console.log("API_KEY",process.env.APP_KEY);
 
 export var firebaseRef = firebase.database().ref();
 export default firebase;
